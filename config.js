@@ -2,10 +2,10 @@ const fs = require("fs")
 const chalk = require("chalk")
 
 // Other
-global.thum = "https://telegra.ph/file/7188012d573871aaf4fa0.jpg"
+global.thum = "https://steamuserimages-a.akamaihd.net/ugc/954087817129084207/5B7E46EE484181A676C02DFCAD48ECB1C74BC423/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 global.log0 = fs.readFileSync("./media/fenzo.jpg")
 global.thumb = fs.readFileSync("./media/fenzo.jpg")
-global.err4r = "https://telegra.ph/file/7188012d573871aaf4fa0.jpg"
+global.err4r = "https://steamuserimages-a.akamaihd.net/ugc/954087817129084207/5B7E46EE484181A676C02DFCAD48ECB1C74BC423/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
 global.owner = ['6289675134806']
 global.lolhuman = "RelzzAPIs"
 global.rkyt = []
@@ -15,7 +15,7 @@ global.wlcm = []
 global.gcrevoke = ['19054091487-1424650263@g.us']
 global.packname = "© Emilia"
 global.packname2 = "Emilia-MD"
-global.author = "EmiliaDev"
+global.author = "Riyadh"
 global.sessionName = "session"
 global.namebot = "Emilia-MD"
 global.linkgrupss = "https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci"
