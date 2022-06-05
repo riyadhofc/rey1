@@ -128,9 +128,9 @@ WCome = await getBuffer(`https://hardianto.xyz/api/tools/welcomer?nama=${encodeU
 
 GBye = await getBuffer(`https://hardianto.xyz/api/tools/leave?nama=${encodeURIComponent(nama)}&namaGb=${encodeURIComponent(metadata.subject)}&pepeGb=${encodeURIComponent(ppgroup)}&totalMem=${encodeURIComponent(memb)}&pepeUser=${encodeURIComponent(ppuser)}&bege=https://telegra.ph/file/d561876a112fea9777677.jpg&apikey=hardianto`)
                 if (anu.action == 'add') {
-                    mans.sendMessage(anu.id, { image: { url: `https://telegra.ph/file/d561876a112fea9777677.jpg` }, contextInfo: { mentionedJid: [num] }, caption: `Hi @${num.split("@")[0]}!!` })
+                    mans.sendMessage(anu.id, { image: WCome, contextInfo: { mentionedJid: [num] }, caption: `Assalamualaikum Warahmatullahi Wabarokatuh\nHai, @${num.split("@")[0]}!!\nSelamat Datang Di Group ${metadata.subject} Semoga Betah Di sini` })
                 } else if (anu.action == 'remove') {
-                    mans.sendMessage(anu.id, { image: { url: `https://telegra.ph/file/d561876a112fea9777677.jpg` }, contextInfo: { mentionedJid: [num] }, caption: `@${num.split("@")[0]} Leaving To ${metadata.subject}` })
+                    mans.sendMessage(anu.id, { image: GBye, contextInfo: { mentionedJid: [num] }, caption: `Telah keluar @${num.split("@")[0]} Dari ${metadata.subject}` })
                 }
             }
         } catch (err) {
