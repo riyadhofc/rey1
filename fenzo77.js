@@ -1093,7 +1093,7 @@ message: {
 } 
 //FAKEREPLY TEXT WITH THUMBNAIL
 const fakey = (teks) => {
-            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Join Group Game Source`,"body": `Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci"}}}, { quoted: m})
+            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Join Group Game Source`,"body": `Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://api-riyadh.herokuapp.com/docs"}}}, { quoted: m})
         }
 const ftextt = {
 key: { 
@@ -1186,7 +1186,7 @@ case 'hanzo': case 'prp': case 'inventori': case 'profile':{
      teksehmazeh += `*Role* : ${role}\n`
      teksehmazeh += `*Level* : ${getLevelingLevel(m.sender)}`
      let butRun = [
-        	{ urlButton: { displayText: `Group WhatsApp`, url : `https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci` } },
+        	{ urlButton: { displayText: `Group WhatsApp`, url : `https://api-riyadh.herokuapp.com/docs` } },
         	{ urlButton: { displayText: `Instagram`, url : `https://Instagram.com/bangreyy_54` } },
             { urlButton: { displayText: `☎️Contact Me`, url: `wa.me/6289675134806` } },
             { quickReplyButton: { displayText: `🏧 leaderboard`, id: 'leaderboard'} }
@@ -1228,7 +1228,7 @@ mans.send5ButImg(m.chat, listmn, `© Creator by Riyadh`, global.thumb, kontol)
 case 'grupbot':
 case 'groupbot':
 case 'botgrup':
-fakey(`https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci`)
+fakey(`https://chat.whatsapp.com/BlXylhSENYx78w1fDMAOYv`)
 break
 case 'limit':
 fakey(`*Sisa Limit Anda : ${global.db.users[m.sender].limit}*`)
