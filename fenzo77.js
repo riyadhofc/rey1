@@ -1093,7 +1093,7 @@ message: {
 } 
 //FAKEREPLY TEXT WITH THUMBNAIL
 const fakey = (teks) => {
-            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Join Group Game Source`,"body": `Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://api-riyadh.herokuapp.com/docs"}}}, { quoted: m})
+            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Join Group Game Source`,"body": `Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://chat.whatsapp.com/BlXylhSENYx78w1fDMAOYv"}}}, { quoted: m})
         }
 const ftextt = {
 key: { 
@@ -5374,7 +5374,7 @@ m.reply(`Satu limit terpakai\nSisa limit kamu : ${global.db.users[m.sender].limi
             mans.sendImage(m.chat, res.result[0].thumbnail, capt, m)
             }
             break
-case 'bj':case 'ero':case 'cum':case 'feet':case 'yuri':case 'trap':case 'lewd':case 'feed':case 'eron':case 'solo':case 'gasm':case 'poke':case 'anal':case 'holo':case 'tits':case 'kuni':case 'kiss':case 'erok':case 'smug':case 'baka':case 'solog':case 'feetg':case 'lewdk':case 'pussy':case 'femdom':case 'cuddle':case 'eroyuri':case 'cum_jpg':case 'blowjob':case 'erofeet':case 'holoero':case 'erokemo':case 'fox_girl':case 'futanari':case 'lewdkemo':case 'pussy_jpg':case 'kemonomimi':case 'nsfw_avatar': 
+case 'blowjob':case 'ero':case 'cum':case 'feet':case 'yuri':case 'trap':case 'lewd':case 'feed':case 'eron':case 'solo':case 'gasm':case 'poke':case 'anal':case 'holo':case 'tits':case 'kuni':case 'kiss':case 'erok':case 'smug':case 'baka':case 'solog':case 'feetg':case 'lewdk':case 'pussy':case 'femdom':case 'cuddle':case 'eroyuri':case 'cum_jpg':case 'blowjob':case 'erofeet':case 'holoero':case 'erokemo':case 'fox_girl':case 'futanari':case 'lewdkemo':case 'pussy_jpg':case 'kemonomimi':case 'nsfw_avatar': 
 	
 	    buffer = `http://api.lolhuman.xyz/api/random2/${command}?apikey=${lolkey}`
                     mans.sendMessage(from, {image:{url:buffer}, caption:"Done!"}, {quoted:m})
@@ -5488,7 +5488,7 @@ mans.sendMessage(from, {image:{url:nye}, caption:"Done!"}, {quoted:m})
 break			
 // akhir fitur anime
 case 'anjing':
-nye = `http://api.lolhuman.xyz/api/gimage?apikey=${lolkey}&query=anjing`
+nye = `https://api-riyadh.herokuapp.com/api/wallpaper/anjing?apikey=APIKEY`
 fakey(mess.wait)
 mans.sendMessage(from, {image:{url:nye}, caption:"Done!"}, {quoted:m})
 break			
