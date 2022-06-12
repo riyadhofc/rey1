@@ -125,10 +125,10 @@ let nama = await mans.getName(num)
 memb = metadata.participants.length
 //
 //WCome = await getBuffer(`https://api-riyadh.herokuapp.com/api/canvas/welcome?username=${encodeURIComponent(nama)}&memberCount=${encodeURIComponent(memb)}&gcname=${encodeURIComponent(metadata.subject)}&pepeGb=${encodeURIComponent(ppgroup)}&pepeUser=${encodeURIComponent(ppuser)}&bege=https://telegra.ph/file/d561876a112fea9777677.jpg&apikey=hardianto`)
-WCome = await getBuffer(`https://api-riyadh.herokuapp.com/api/canvas/welcome?username=${encodeURIComponent(nama)}&memberCount=${encodeURIComponent(memb)}&gcname=${encodeURIComponent(metadata.subject)}&bg=https://telegra.ph/file/d561876a112fea9777677.jpg&pp=${encodeURIComponent(ppuser)}&gcicon=${encodeURIComponent(ppgroup)}&apikey=APIKEY`)
+//WCome = await getBuffer(`https://api-riyadh.herokuapp.com/api/canvas/welcome?username=${encodeURIComponent(nama)}&memberCount=${encodeURIComponent(memb)}&gcname=${encodeURIComponent(metadata.subject)}&bg=https://telegra.ph/file/d561876a112fea9777677.jpg&pp=${encodeURIComponent(ppuser)}&gcicon=${encodeURIComponent(ppgroup)}&apikey=APIKEY`)
 //GBye = await getBuffer(`https://hardianto.xyz/api/tools/leave?nama=${encodeURIComponent(nama)}&namaGb=${encodeURIComponent(metadata.subject)}&pepeGb=${encodeURIComponent(ppgroup)}&totalMem=${encodeURIComponent(memb)}&pepeUser=${encodeURIComponent(ppuser)}&bege=https://telegra.ph/file/d561876a112fea9777677.jpg&apikey=hardianto`)
                 if (anu.action == 'add') {
-                    mans.sendMessage(anu.id, { image: WCome, contextInfo: { mentionedJid: [num] }, caption: `Assalamualaikum Warahmatullahi Wabarokatuh\nHai, @${num.split("@")[0]}!!\nSelamat Datang Di Group ${metadata.subject} Semoga Betah Di sini` })
+                    mans.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Assalamualaikum Warahmatullahi Wabarokatuh\nHai, @${num.split("@")[0]}!!\nSelamat Datang Di Group ${metadata.subject} Semoga Betah Di sini` })
                 } else if (anu.action == 'remove') {
                     mans.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `Telah keluar @${num.split("@")[0]} Dari ${metadata.subject}` })
                 }
